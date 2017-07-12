@@ -1,0 +1,46 @@
+conteiner()
+	max-width 1280px
+	margin 0 auto
+	padding 0 5%
+
+html
+	font-size 10px
+	
+body
+	position relative
+	background-image url(../assets/img/general/main-bg-3.jpg)
+	background-repeat no-repeat
+	background-attachment fixed
+	background-size cover
+	background-position center center
+	
+	font-family 'Istok Web', sans-serif
+	font-size 1.6rem
+	line-height 1.2
+	color #fff
+	
+	+above(560px)
+		font-size 2rem
+
+a
+	color #fff
+	text-decoration underline
+	&:hover
+		text-decoration none
+		color green
+	&:active
+		text-decoration underline
+	&:visited
+		color #fff
+		text-decoration underline
+	
+h1 
+	font-size 5rem
+	line-height 1.1
+
+.content
+	// background-color rgba(0,0,0,0.5)
+	padding 10% 0
+	
+	&__wrap
+		conteiner()

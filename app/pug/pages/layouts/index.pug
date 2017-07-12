@@ -1,0 +1,12 @@
+extends ../../templates/default/template.pug
+
+block head
+	- var path = '../';
+	- var pageTitle = 'Дизайн макетов';
+	- var pageDescription = '';
+
+block content
+	main.content
+		.content__wrap
+			h1 Макеты проектов
+			include ../../../blocks/layouts-list/layouts-list.pug

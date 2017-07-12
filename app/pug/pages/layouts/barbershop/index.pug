@@ -1,0 +1,26 @@
+extends ../../../templates/default/template.pug
+
+block head
+	- var path = '../../';
+	- var pageTitle = 'Макеты Barbershop';
+	- var pageDescription = '';
+
+block content
+	main.content
+		.content__wrap
+			h1 Макеты Barbershop
+
+			-
+				var galleryList = [
+					{
+						url: 'assets/img/content/layouts/barbershop/barbershop-index.jpg',
+						name: 'barbershop-index.jpg'
+					}
+				]
+			
+			include ../../../../blocks/gallery/gallery.pug
+
+
+
+
+

@@ -1,0 +1,8 @@
+mixin galleryItem(url, name)
+	li.gallery__item
+		a.gallery__link(href= path + url, target="_blanc")= name
+
+
+ul.gallery
+	each i in galleryList
+		+galleryItem(i.url, i.name)
