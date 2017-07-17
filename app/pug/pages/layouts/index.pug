@@ -5,8 +5,14 @@ block head
 	- var pageTitle = 'Дизайн макетов';
 	- var pageDescription = '';
 
+	-
+		var list = [
+			{url: 'barbershop/', name: 'Barbershop'}
+		];
+
+
 block content
 	main.content
 		.content__wrap
 			h1 Макеты проектов
-			include ../../../blocks/layouts-list/layouts-list.pug
+			include ../../../blocks/list/list.pug

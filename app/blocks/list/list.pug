@@ -1,0 +1,8 @@
+mixin listItem(url, name)
+	li.list__item
+		a.list__link(href= path + url, target="_blanc")= name
+
+
+ul.list
+	each i in list
+		+listItem(i.url, i.name)
