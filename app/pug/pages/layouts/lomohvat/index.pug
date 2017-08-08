@@ -1,0 +1,38 @@
+extends ../../../templates/default/template.pug
+
+block head
+	- var path = '../../';
+	- var pageTitle = 'Макеты Lomohvat';
+	- var pageDescription = '';
+
+block content
+	main.content
+		.content__wrap
+			h1 Макеты Lomohvat
+
+			-
+				var galleryList = [
+					{
+						url: 'assets/img/content/layouts/lomohvat/lomohvat-phone.jpg',
+						name: 'lomohvat-phone.jpg'
+					},
+					{
+						url: 'assets/img/content/layouts/lomohvat/lomohvat-tablet.jpg',
+						name: 'lomohvat-tablet.jpg'
+					},
+					{
+						url: 'assets/img/content/layouts/lomohvat/lomohvat-laptop.jpg',
+						name: 'lomohvat-laptop.jpg'
+					},
+					{
+						url: 'assets/img/content/layouts/lomohvat/lomohvat-desktop.jpg',
+						name: 'lomohvat-desktop.jpg'
+					}
+				]
+			
+			include ../../../../blocks/gallery/gallery.pug
+
+
+
+
+
