@@ -1,0 +1,34 @@
+extends ../../../templates/default/template.pug
+
+block head
+	- var path = '../../';
+	- var pageTitle = 'Макеты Barbershop-adaptive';
+	- var pageDescription = '';
+
+block content
+	main.content
+		.content__wrap
+			h1 Макеты Barbershop-adaptive
+
+			-
+				var galleryList = [
+					{
+						url: 'assets/img/content/layouts/barbershop-adaptive/barbershop-adaptive-mobile.jpg',
+						name: 'barbershop-adaptive-mobile.jpg'
+					},
+					{
+						url: 'assets/img/content/layouts/barbershop-adaptive/barbershop-adaptive-tablet.jpg',
+						name: 'barbershop-adaptive-tablet.jpg'
+					},
+					{
+						url: 'assets/img/content/layouts/barbershop-adaptive/barbershop-adaptive-desktop.jpg',
+						name: 'barbershop-adaptive-desktop.jpg'
+					}
+				]
+			
+			include ../../../../blocks/gallery/gallery.pug
+
+
+
+
+
