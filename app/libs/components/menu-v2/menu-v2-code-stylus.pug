@@ -1,0 +1,41 @@
+pre
+	code.language-stylus.
+		$menu_main-color = #0088cc
+		$menu_border-width = 1px
+		$menu_padding-link = 10px 14px
+
+		.menu
+			margin 0
+			padding 0
+			
+			list-style none
+
+			&__link
+				display block
+				padding $menu_padding-link
+				margin-bottom - $menu_border-width
+
+				text-decoration none
+				
+				color $menu_main-color
+				border $menu_border-width solid $menu_main-color
+
+				&:hover
+					color lighten($menu_main-color, 90%)
+					background lighten($menu_main-color, 40%)
+					border-color lighten($menu_main-color, 40%)
+				
+				&:active
+					color $menu_main-color
+				
+				&_active
+					color lighten($menu_main-color, 90%)
+					background $menu_main-color
+					
+					cursor default
+					
+					&:hover
+						background $menu_main-color
+					
+					&:active
+						color lighten($menu_main-color, 90%)

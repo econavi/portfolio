@@ -1,0 +1,20 @@
+.sliding-card
+	.sliding-card__toggle.sliding-card__toggle_down
+	
+	.sliding-card__visible-content
+		.component
+			span.component__id responsive-font
+			.component__area
+				include ../../../libs/components/responsive-font/responsive-font.pug
+
+
+	.sliding-card__hidden-content
+		.code-area
+			span.code-area__header pug
+			.code-area__code-self
+				include ../../../libs/components/responsive-font/responsive-font-code-pug.pug
+		
+		.code-area
+			span.code-area__header stylus
+			.code-area__code-self
+				include ../../../libs/components/responsive-font/responsive-font-code-stylus.pug

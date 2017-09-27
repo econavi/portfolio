@@ -1,0 +1,20 @@
+pre
+	code.language-stylus.
+		/*
+			Изменение велечены текста относительно viewport экрана, в приделах заданных размеров.
+			Используется формула Mike Riethmuller: 
+			font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+		*/
+		
+		$setResponsiveFont($smallFont, $bigFont, $smallViewport, $bigViewport)
+			font-size "calc(%s%s + (%s - %s) * ((100vw - %s%s) / (%s - %s)))" \
+			% ($smallFont px $bigFont $smallFont $smallViewport px $bigViewport $smallViewport)
+
+		.responsive-font
+			$setResponsiveFont(14, 26, 320, 1600)
+
+			p
+				font-size 1em
+
+			h1
+				font-size 1.5em

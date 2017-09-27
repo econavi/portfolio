@@ -1,0 +1,16 @@
+pre
+	code.language-javascript.
+		/* Для активного пункта меню */
+		var links = document.querySelectorAll('.menu__link');
+
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].getAttribute('href') == window.location.pathname) {
+				var link = links[i];
+				
+				/* добавить html-класс для стилизации */
+				link.classList.add('menu__link_active');
+				
+				/* удалить атрибут href */
+				link.removeAttribute('href');
+			}
+		}

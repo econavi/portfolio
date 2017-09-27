@@ -1,0 +1,72 @@
+pre
+	code.language-stylus.
+		$chevron_size = 64px
+		$chevron_weight = 2px
+		$chevron_color = #0088cc
+		$chevron_bg-color = #000
+		$chevron_bg-radius = 50%
+
+		.icon-chevron
+			position relative
+			
+			display inline-block
+			width $chevron_size
+			height $chevron_size
+			
+			background none
+			border none
+			
+			overflow hidden
+
+			&:active
+				outline-style none
+			
+			&::after
+				content ''
+				position absolute
+				top 50%
+				left 50%
+				
+				width 60%
+				height 60%
+				
+				border-right $chevron_weight solid $chevron_color
+				border-bottom $chevron_weight solid $chevron_color
+				
+				cursor pointer
+				
+			&:hover::after
+				border-color lighten($chevron_color, 50%)
+			
+			&:active::after
+				border-color $chevron_color
+			
+			/* Направления */
+			&_up
+				&::after
+					transform translate(-50%, -30%) rotate(225deg)
+			
+			&_down
+				&::after
+					transform translate(-50%, -70%) rotate(45deg)
+				
+			&_right
+				&::after
+					transform translate(-70%, -50%) rotate(315deg)
+			
+			&_left
+				&::after
+					transform translate(-30%, -50%) rotate(135deg)
+			
+			/* Фон */
+			&_has-bg
+				background $chevron_bg-color
+				border-radius $chevron_bg-radius
+				cursor pointer
+				
+				&:hover
+					background lighten($chevron_bg-color, 10%)
+
+				&::after
+					width 30%
+					height 30%

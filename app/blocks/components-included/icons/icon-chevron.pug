@@ -1,0 +1,25 @@
+.sliding-card
+	.sliding-card__toggle.sliding-card__toggle_down
+	
+	.sliding-card__visible-content
+		.component
+			span.component__id icon-chevron
+			.component__area
+				include ../../../libs/components/icon-chevron/icon-chevron.pug
+
+
+	.sliding-card__hidden-content
+		.code-area
+			span.code-area__header pug
+			.code-area__code-self
+				include ../../../libs/components/icon-chevron/icon-chevron-code-pug.pug
+		
+		.code-area
+			span.code-area__header stylus
+			.code-area__code-self
+				include ../../../libs/components/icon-chevron/icon-chevron-code-stylus.pug
+
+		.code-area
+			span.code-area__header javascript
+			.code-area__code-self
+				include ../../../libs/components/icon-chevron/icon-chevron-code-js.pug

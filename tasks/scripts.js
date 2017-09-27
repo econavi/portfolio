@@ -56,7 +56,7 @@ let options = {
 
 module.exports = () => (
 
-	gulp.src('app/scripts/*.js')
+	gulp.src('app/scripts/app.js')
 	.pipe(plumber({
 		errorHandler: notify.onError(function(err) {
 			return {

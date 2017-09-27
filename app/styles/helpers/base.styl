@@ -3,6 +3,16 @@ conteiner()
 	margin 0 auto
 	padding 0 5%
 
+.visualli-hidden
+	position absolute
+	width 1px
+	height 1px
+	margin -1px
+	padding 0
+	border 0
+	clip rect(0 0 0 0)
+	overflow hidden
+
 html
 	font-size 10px
 	
@@ -25,20 +35,23 @@ body
 a
 	color #fff
 	text-decoration underline
+	
 	&:hover
 		text-decoration none
+	
 	&:active
 		text-decoration underline
+	
 	&:visited
 		color #fff
 		text-decoration underline
 	
 h1 
-	font-size 5rem
+	font-size 4.77rem
 	line-height 1.1
 
 .content
-	// background-color rgba(0,0,0,0.5)
+	min-width 320px
 	padding 2% 0
 	
 	&__wrap

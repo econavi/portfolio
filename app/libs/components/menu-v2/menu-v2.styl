@@ -1,0 +1,50 @@
+$menu-v2_main-color = #0088cc
+$menu-v2_border-width = 1px
+$menu-v2_padding-link = 10px 14px
+
+.components-list .menu-v2
+	margin 0
+	padding 0
+	
+	list-style none
+
+	&__link
+		display block
+		padding $menu-v2_padding-link
+		margin-bottom - $menu-v2_border-width
+
+		text-decoration none
+		
+		color $menu-v2_main-color
+		border $menu-v2_border-width solid $menu-v2_main-color
+
+		&:hover
+			color lighten($menu-v2_main-color, 90%)
+			background lighten($menu-v2_main-color, 40%)
+			border-color lighten($menu-v2_main-color, 40%)
+		
+		&:active
+			color $menu-v2_main-color
+		
+		&_active
+			color lighten($menu-v2_main-color, 90%)
+			background $menu-v2_main-color
+			border-color $menu-v2_main-color
+			
+			cursor default
+			
+			&:hover
+				background $menu-v2_main-color
+				border-color $menu-v2_main-color
+			
+			&:active
+				color lighten($menu-v2_main-color, 90%)
+				border-color $menu-v2_main-color
+				
+			
+
+
+
+
+
+
