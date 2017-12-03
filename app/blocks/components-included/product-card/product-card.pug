@@ -1,0 +1,26 @@
+.sliding-card
+	.sliding-card__toggle.sliding-card__toggle_down
+	
+	.sliding-card__visible-content
+		.component
+			span.component__id product-card
+			.component__area
+				.product-card-toggle
+					.view-switch
+						.view-switch__item.view-switch__item_active
+							.view-switch__item-list
+						.view-switch__item
+							.view-switch__item-matrix
+				include ../../../libs/components/product-card/product-card.pug
+
+
+	.sliding-card__hidden-content
+		.code-area
+			span.code-area__header pug
+			.code-area__code-self
+				include ../../../libs/components/product-card/product-card-code-pug.pug
+		
+		.code-area
+			span.code-area__header stylus
+			.code-area__code-self
+				include ../../../libs/components/product-card/product-card-code-stylus.pug

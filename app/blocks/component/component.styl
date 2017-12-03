@@ -6,11 +6,14 @@ $component-area_gradient_first-color = $light
 $component-area_gradient_second-color = $gray_lighten
 
 .component
+	padding-top 5px
 
 	&__id
 		display block
+		padding-right 5px
 		
 		font-size 1.6rem
+		line-height 1.2
 		font-style italic
 		text-align right
 
@@ -20,17 +23,10 @@ $component-area_gradient_second-color = $gray_lighten
 			content 'id: '
 		
 	&__area
-		margin-top 10px
 		margin-bottom 20px
-		padding 4% 3%
+		padding 20px /*3%*/ 0
 		
 		$setResponsiveFont(15, 19.2, 320, 1600)
-		
-		border-radius 5px
-		
-		background linear-gradient($component-area_gradient_first-color, \
-			$component-area_gradient_second-color)
-		border 1px solid $gray_lighten
 
 	a
 		color $component-link_color

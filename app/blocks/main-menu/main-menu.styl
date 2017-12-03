@@ -1,0 +1,25 @@
+.main-menu
+	background #000
+	
+	&__list
+		display flex
+		margin 0
+		padding 0
+		
+		list-style none
+	
+	&__link
+		display block
+		padding 10px 20px
+		
+		text-decoration none
+		
+		&_active
+			color yellow
+		
+		&:hover
+			background lighten(#000, 40%)
+		
+		&:not([href])
+			background #000
+			cursor default

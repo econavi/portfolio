@@ -1,0 +1,133 @@
+pre
+	code.language-stylus.
+		.product-card
+			position relative
+			
+			display flex
+			
+			border 2px solid #c5c5c5
+			background #fff
+			
+			&__label
+				position absolute
+				top -2px
+				left -2px
+				
+				padding 3px
+				
+				color #fff
+				background #444
+			
+			&__img-wrapper
+				width 228px
+				height 155px
+				overflow hidden
+			
+			&__img
+				max-width 100%
+			
+			&__content
+				flex-grow 1
+				
+				display flex
+				justify-content space-between
+				
+				padding 1.5%
+				
+				color #444
+				
+			&__title-wrap
+				padding-right 15px
+				margin-bottom 10px
+				
+				font-size 21.6px
+			
+			&__properties-wrap
+				padding-right 15px
+				
+			&__rating-wrap
+				margin-bottom 10px
+				text-align right
+			
+			&__price-wrap
+				margin-bottom 10px
+				text-align right
+			
+			&__button-wrap
+				text-align right
+
+
+			// Вертикальное переопределение
+			&_vertical
+				flex-direction column
+				align-items center
+				width 228px
+			
+			&_vertical &__label
+				left auto
+				right -2px
+				
+			&_vertical	&__content
+					flex-direction column
+
+			&_vertical &__content-cell
+				display flex
+				flex-direction column
+				align-items center
+			
+			&_vertical	&__title-wrap
+				padding-top 5px
+				padding-right 0
+				
+				font-size 18px
+				text-align center
+			
+			&_vertical &__properties-wrap
+				display none
+			
+			&_vertical &__price-wrap
+				text-align center
+			
+			&_vertical &__button-wrap
+				padding-bottom 5px
+
+		// Блок - загаловок
+		.product-card-title
+			display inline-block
+			
+			font-weight bold
+			text-decoration none
+			
+			color #444
+			
+			&:hover
+				text-decoration underline
+			
+			&:active
+				text-decoration none
+
+
+		// Блок - свойства товара
+		.product-card-properties
+			font-size 15px
+			list-style none
+			
+			&__item
+				padding-bottom: 3px
+			
+			&__title
+				margin-right: 5px
+
+		// Блок - цены
+		.product-card-price
+			display block
+			white-space nowrap
+
+			&__actual
+				font-size 25.92px
+				
+			&__old
+				font-size 21.6px
+				text-decoration line-through
+				
+				color lighten(#444, 60%)

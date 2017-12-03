@@ -1,0 +1,56 @@
+.product-card-toggle
+	width 80px
+	height 40px
+	margin-bottom 20px
+	border 2px solid gray
+
+.view-switch
+	display flex
+	width 100%
+	height 100%
+	
+	&__item
+		display flex
+		width 50%
+		height 100%
+		
+		border-right 2px solid gray
+		
+		cursor pointer
+		
+		&:last-child
+			border-right none
+		
+		&_active
+			background darken(#fff, 20%)
+			cursor default
+		
+		&:hover
+			background darken(#fff, 20%)
+	
+	&__item-list
+		width 50%
+		height 6%
+		margin auto
+		
+		background $listColor = black
+		box-shadow 0 0.4em $listColor,
+			0 -0.4em $listColor
+	
+	&__item-matrix
+		width 10%
+		height 10%
+		margin auto
+		
+		background $matrixColor = black
+		
+		box-shadow 0.4em 0 0 $matrixColor, 
+			-0.4em 0 0 $matrixColor, 
+			0 0.4em 0 $matrixColor, 
+			0 -0.4em 0 $matrixColor, 
+			-0.4em -0.4em 0 $matrixColor,
+			0.4em 0.4em 0 $matrixColor,
+			0.4em -0.4em 0 $matrixColor,
+			-0.4em 0.4em 0 $matrixColor
+		
+	

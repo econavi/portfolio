@@ -32,6 +32,10 @@ body
 	+above(560px)
 		font-size 2rem
 
+img
+	max-width 100%
+	height auto
+
 a
 	color #fff
 	text-decoration underline
@@ -42,12 +46,13 @@ a
 	&:active
 		text-decoration underline
 	
-	&:visited
-		color #fff
-		text-decoration underline
+	// &:visited
+	// 	color #fff
+	// 	text-decoration underline
 	
-h1 
-	font-size 4.77rem
+h1
+	$setResponsiveFont(33.178, 47.7, 320, 1600)
+	// font-size 4.77rem
 	line-height 1.1
 
 .content

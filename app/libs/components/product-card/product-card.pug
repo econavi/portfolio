@@ -1,0 +1,31 @@
+.product-card
+	.product-card__label Новинка
+
+	.product-card__img-wrapper
+		img.product-card__img(src='http://via.placeholder.com/228x155')
+	
+	.product-card__content
+		.product-card__content-cell
+			a.product-card__title-wrap.product-card-title(href='javascript:void') Самый клевый товар, который можно купить!
+			
+			.product-card__properties-wrap
+				ul.product-card-properties
+					li.product-card-properties__item
+						span.product-card-properties__title Артикул:
+						span.product-card-properties__value XX-XXXX
+					li.product-card-properties__item
+						span.product-card-properties__title Производитель:
+						span.product-card-properties__value Brand (Китай)
+					li.product-card-properties__item
+						span.product-card-properties__title Материал:
+						span.product-card-properties__value пушистый
+
+		.product-card__content-cell
+			.product-card__rating-wrap * * * * *
+
+			.product-card__price-wrap.product-card-price
+				.product-card-price__actual 23 700 р.
+				.product-card-price__old 29 000 р.
+		
+			.product-card__button-wrap
+				button(type='button') Купить

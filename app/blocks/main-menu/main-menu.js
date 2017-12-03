@@ -1,1 +1,8 @@
-console.log('main-menu.js подключен.');
+var elem = document.querySelectorAll('.main-menu__link');
+
+for(var i = 0; i < elem.length; i++) {
+	if(elem[i].getAttribute('href') == window.location.pathname) {
+		elem[i].classList.add('main-menu__link_active');
+		elem[i].removeAttribute('href');
+	}
+}
