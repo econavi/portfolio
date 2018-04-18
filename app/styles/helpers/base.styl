@@ -18,6 +18,7 @@ html
 	
 body
 	position relative
+	background-color #000
 	background-image url(../assets/img/general/main-bg-3.jpg)
 	background-repeat no-repeat
 	background-attachment fixed
@@ -38,13 +39,15 @@ img
 
 a
 	color #fff
-	text-decoration underline
-	
+	text-decoration none
+	background-image linear-gradient(to top, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 5px, #fff 6px, rgba(0,0,0,0) 6px, rgba(0,0,0,0) 100px)
+	// text-shadow 1px 0px #000, -1px 0px #000
+
 	&:hover
-		text-decoration none
+		background-image none
 	
 	&:active
-		text-decoration underline
+		background-image linear-gradient(to top, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 5px, #fff 6px, rgba(0,0,0,0) 6px, rgba(0,0,0,0) 100px)
 	
 	// &:visited
 	// 	color #fff
